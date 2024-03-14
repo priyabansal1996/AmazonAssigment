@@ -117,7 +117,7 @@ public class amazon {
 		Thread.sleep(5000);
 		driver.getWindowHandles().forEach(tab->driver.switchTo().window(tab));
 		Thread.sleep(5000);
-		//Add item to cart
+		//Add item to amazon cart
 		driver.findElement(By.xpath("//div[@id='ppd']//form[@id='addToCart']//span[@id='submit.add-to-cart']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//span[@id='nav-cart-count']")).click();
